@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+    <property name="hibernate.connection.username">parking</property>
+    <property name="hibernate.connection.password">parking</property>
+    <mapping resource="pojos/Map.hbm.xml"/>
+    <mapping resource="pojos/AdminsAction.hbm.xml"/>
+    <mapping resource="pojos/Roles.hbm.xml"/>
+    <mapping resource="pojos/Employees.hbm.xml"/>
+    <mapping resource="pojos/Users.hbm.xml"/>
+    <mapping resource="pojos/Garage.hbm.xml"/>
+    <mapping class="pojos.Roles"/>
+    <mapping class="pojos.Garage"/>
+    <mapping class="pojos.Users"/>
+    <mapping class="pojos.AdminsAction"/>
+    <mapping class="pojos.Employees"/>
+    <mapping class="pojos.Map"/>
+    <mapping class="pojos.AdminsActionId"/>
+  </session-factory>
+</hibernate-configuration>
