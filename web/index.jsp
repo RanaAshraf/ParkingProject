@@ -12,7 +12,6 @@
 		<style>
 input:focus
 {
-    
 background-color:green;
 }
 </style>
