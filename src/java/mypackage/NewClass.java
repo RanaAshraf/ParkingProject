@@ -10,7 +10,5 @@ package mypackage;
  */
 public class NewClass {
 
-   
-    
     
 }
